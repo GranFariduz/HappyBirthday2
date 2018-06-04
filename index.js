@@ -7,8 +7,6 @@ let height = window.innerHeight;
 
 const header = document.querySelector('header');
 
-loader.style.margin = `${height/2.5}px ${width/2.5}px`;
-
 loaderDiv.style.width = width + 'px';
 loaderDiv.style.height = height + 'px';
 

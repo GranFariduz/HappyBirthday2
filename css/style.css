@@ -3,7 +3,7 @@
 
 /* RESET */
 * { padding: 0px; margin: 0px; }
-body { color: var(--pink); overflow: hidden;}
+body { color: var(--pink); overflow: hidden; }
 
 /* COLORS */
 :root {
@@ -63,9 +63,31 @@ body { color: var(--pink); overflow: hidden;}
 .loader div {
     height: 100px;
     width: 100px;
-    background: rgb(241, 165, 183);
+    background: white;
     border-radius: 50%;
+    position: relative;
+    top: 50%; left: 50%;
+    margin-top: -50px; 
+    margin-left: -50px;
     animation: smallBig infinite cubic-bezier(0.23, 1, 0.320, 1) alternate 1s;
+}
+
+.loader div span {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: var(--pink);
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -30px;
+    animation: inner infinite cubic-bezier(0.39, 0.575, 0.565, 1) alternate 1s;
+}
+
+@keyframes inner {
+    from { tranform: scale(1); }
+    to { transform: scale(2); } 
 }
 
 @keyframes smallBig {
