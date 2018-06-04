@@ -1,5 +1,5 @@
 /* RESET */
-* { padding: 0px; margin: 0px; }
+* { padding: 0px; margin: 0px; scroll-behavior: unset;}
 body { color: var(--pink); }
 
 /* COLORS */
@@ -46,6 +46,25 @@ body { color: var(--pink); }
 .section-margin {
     margin-top: 120px;
 }
+
+/* Loader styling */
+.loader {
+    opacity: 1;
+    background: #E86786;
+    transform: translateY(0px);
+    transition: 1.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    position: absolute;
+    z-index: 99999;
+}
+
+/* .animate { animation: up 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }    
+
+@keyframes up {
+    to {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+} */
 
 /* Element styling */
 .section-heading h1 {
