@@ -1,0 +1,157 @@
+/* RESET */
+* { padding: 0px; margin: 0px; }
+body { color: var(--pink); }
+
+/* COLORS */
+:root {
+    --pink: #E86786;
+}
+
+/* Pre-defined classes */
+.navbar-heading {
+    font-family: 'Lobster';
+    font-size: 56px;
+    text-align: center;
+}
+
+.section-heading {
+    font-family: 'Lobster';
+    font-size: 24px;
+    text-align: center;
+}
+
+.section-content-heading {
+    font-family: 'Lobster';
+    font-size: 48px;
+    letter-spacing: 6px;
+}
+
+.section-content {
+    font-family: 'Montserrat';
+    font-size: 27px;
+}
+
+.line {
+    border: 10px solid var(--pink);
+}
+
+.shadow {
+    box-shadow: 0px 0px 30px 0px grey;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.section-margin {
+    margin-top: 120px;
+}
+
+/* Element styling */
+.section-heading h1 {
+    margin: 75px;
+    margin-bottom: 30px;
+}
+
+.section-heading div {
+    background-color: #E86786;
+    height: 10px;
+    width: 88px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+section {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+section div {
+    flex-grow: 1;
+    min-width: 400px;
+}
+
+.type1 div:nth-child(1) {
+    background-image: url(../assets/nacho-rochon-423005-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.type1 div:nth-child(2) {
+    background-color: white;
+}
+
+.type2 div:nth-child(1) {
+    background-color: white;
+}
+.type2 div:nth-child(2) {
+    background-image: url(../assets/rodrigo-soares-487443-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* header styling */
+
+header {
+    height: 570px;
+    width: 100%;
+    background-image: url(../assets/akshar-dave-532470-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+header .header-box {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    top: 130px;
+    left: 245px;
+}
+
+header .header-box div {
+    position: absolute;
+    top: 200px;
+    left: 27px; 
+}
+
+header .header-box span {
+    position: absolute;
+    background-color: #E86786;
+    height: 6px;
+    width: 65px;
+    top: 27px;
+    left: 27px;
+}
+
+header .header-box div p:nth-child(1) {
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
+header .header-box div p:nth-child(2) {
+    font-family: 'Lobster';
+    font-size: 45px;
+}
+
+/* Footer styling */
+footer {
+    margin: 40px auto;
+    background-color: var(--pink);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+}
+
+footer div {
+    position: absolute;
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 24px;
+    color: white;
+    left: 20px;
+    top: 10px;
+}
