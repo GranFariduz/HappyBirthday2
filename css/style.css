@@ -1,6 +1,6 @@
 /* RESET */
-* { padding: 0px; margin: 0px; scroll-behavior: unset;}
-body { color: var(--pink); }
+* { padding: 0px; margin: 0px; }
+body { color: var(--pink); overflow: hidden;}
 
 /* COLORS */
 :root {
@@ -53,18 +53,22 @@ body { color: var(--pink); }
     background: #E86786;
     transform: translateY(0px);
     transition: 1.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-    position: absolute;
+    position: fixed;
     z-index: 99999;
 }
 
-/* .animate { animation: up 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }    
+.loader div {
+    height: 100px;
+    width: 100px;
+    background: rgb(241, 165, 183);
+    border-radius: 50%;
+    animation: smallBig infinite cubic-bezier(0.23, 1, 0.320, 1) alternate 1s;
+}
 
-@keyframes up {
-    to {
-        transform: translateY(-1000px);
-        opacity: 0;
-    }
-} */
+@keyframes smallBig {
+    from { transform: scale(1); }
+    to { transform: scale(2); }
+}
 
 /* Element styling */
 .section-heading h1 {
