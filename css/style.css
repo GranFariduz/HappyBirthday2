@@ -13,7 +13,7 @@ body { color: var(--pink); overflow: hidden; }
 /* Pre-defined classes */
 .navbar-heading {
     font-family: 'Lobster';
-    font-size: 56px;
+    font-size: 34px;
     text-align: center;
 }
 
@@ -85,6 +85,7 @@ body { color: var(--pink); overflow: hidden; }
     animation: inner infinite cubic-bezier(0.39, 0.575, 0.565, 1) alternate 1s;
 }
 
+/* Loader keyframes */
 @keyframes inner {
     from { tranform: scale(1); }
     to { transform: scale(2); } 
@@ -103,8 +104,8 @@ body { color: var(--pink); overflow: hidden; }
 
 .section-heading div {
     background-color: #E86786;
-    height: 10px;
-    width: 88px;
+    height: 8px;
+    width: 80px;
     margin: 0 auto;
     margin-bottom: 70px;
 }
@@ -139,12 +140,48 @@ section div {
     background-position: center center;
 }
 
+/* Navbar styling */
+nav {
+    height: 230px;
+    background-color: white;
+    box-shadow: 0px 2px 15px 0px grey;   
+    position: relative;
+    z-index: 99;
+}
+
+nav .logo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 3px solid var(--pink);
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -50px;
+    top: 20px;
+    background-image: url(../assets/Screenshot-2017-11-25\ Instagram\ Post\ –\ Blue\ Sky\ Photography\ Quote.png);
+    background-size: cover;
+}
+
+.titleDiv {
+    position: absolute;
+    left: 50%;
+    margin-left: -108px;
+    top: 65%;
+}
+
+.titleDiv div {
+    background-color: #E86786;
+    height: 6px;
+    width: 65px;
+    margin: 12px auto;
+}
+
 /* header styling */
 
 header {
     height: 570px;
     width: 100%;
-    background-image: url(../assets/akshar-dave-532470-unsplash.jpg);
+    background-image: url(../assets/akshar-dave-532470-unsplash.png);
     background-size: cover;
     background-position: center center;
     position: relative;
