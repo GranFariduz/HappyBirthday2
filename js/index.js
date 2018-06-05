@@ -36,6 +36,7 @@ window.onscroll = function() {
 
 };
 
+//For scroller animation
 scrollerDiv.addEventListener('click', () => {
 
     let scrollVal = window.pageYOffset;
