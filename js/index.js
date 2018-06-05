@@ -1,6 +1,7 @@
 //Variables
 const loaderDiv = document.querySelector('.loader');
 const loader = document.querySelector('.loader div');
+const all = document.querySelector('*');
 
 let width = window.innerWidth;
 let height = window.innerHeight;
@@ -19,6 +20,7 @@ body.onload = () => {
     loaderDiv.style.transform = `translateY(-${height}px)`;
     loaderDiv.style.opacity = `0`;
     body.style.overflow = 'auto';
+    all.style.overflow = 'auto';
 
     header.style.height = `${height -  100}px`;
 

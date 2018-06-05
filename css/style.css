@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat');
 
 /* RESET */
-* { padding: 0px; margin: 0px; }
-body { color: var(--pink); overflow: hidden; }
+* { padding: 0px; margin: 0px; overflow: hidden;}
+body { color: var(--pink); }
 
 /* COLORS */
 :root {
