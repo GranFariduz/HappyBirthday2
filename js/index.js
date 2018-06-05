@@ -44,10 +44,11 @@ scrollerDiv.addEventListener('click', () => {
         scrollVal -= 17;
         window.scroll(0, scrollVal);
 
-        if(scrollVal == 0) {
+        if(scrollVal <= 0) {
             clearInterval(interval);
-            scrollVal = window.pageYOffset;
+            scrollVal = null;
         }
+
     }, 1);
 
 });
