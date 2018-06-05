@@ -40,15 +40,14 @@ window.onscroll = function() {
 scrollerDiv.addEventListener('click', () => {
 
     let scrollVal = window.pageYOffset;
-    function smooth() {
+    const interval = setInterval(function smooth() {
         scrollVal -= 17;
         window.scroll(0, scrollVal);
 
         if(scrollVal == 0) {
             clearInterval(interval);
+            scrollVal = window.pageYOffset;
         }
-    }
-
-    var interval = setInterval(smooth, 1);
+    }, 1);
 
 });
