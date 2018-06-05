@@ -3,6 +3,7 @@ const loaderDiv = document.querySelector('.loader');
 const loader = document.querySelector('.loader div');
 const all = document.querySelector('*');
 const headerBox = document.querySelector('.header-box');
+const scrollerDiv = document.querySelector('footer');
 
 let width = window.innerWidth;
 let height = window.innerHeight;
@@ -23,7 +24,7 @@ body.onload = () => {
     body.style.overflow = 'auto';
     all.style.overflow = 'auto';
 
-    header.style.height = `${height -  100}px`;
+    header.style.height = `${height - 100}px`;
 
 }
 
@@ -31,6 +32,22 @@ body.onload = () => {
 window.onscroll = function() {
 
     let scrollVal = this.pageYOffset;
-    headerBox.style.transform = `translateY(-${scrollVal/2}px)`;
+    headerBox.style.transform = `translateY(-${scrollVal/3}px)`;
 
 };
+
+scrollerDiv.addEventListener('click', () => {
+
+    let scrollVal = window.pageYOffset;
+    function smooth() {
+        scrollVal -= 17;
+        window.scroll(0, scrollVal);
+
+        if(scrollVal == 0) {
+            clearInterval(interval);
+        }
+    }
+
+    var interval = setInterval(smooth, 1);
+
+});

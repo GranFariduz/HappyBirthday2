@@ -25,13 +25,17 @@ body { color: var(--pink); }
 
 .section-content-heading {
     font-family: 'Lobster';
-    font-size: 48px;
-    letter-spacing: 6px;
+    font-size: 30px;
+    letter-spacing: 10px;
 }
 
 .section-content {
     font-family: 'Montserrat';
-    font-size: 27px;
+    font-size: 17px;
+    height: 200px;
+    width: 230px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .line {
@@ -39,11 +43,11 @@ body { color: var(--pink); }
 }
 
 .shadow {
-    box-shadow: 0px 0px 30px 0px grey;
+    box-shadow: 0px 0px 10px 0px grey;
 }
 
 .radius {
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .section-margin {
@@ -97,6 +101,9 @@ body { color: var(--pink); }
 }
 
 /* Element styling */
+/* ------------------------- */
+
+/* Section styling */
 .section-heading h1 {
     margin: 75px;
     margin-bottom: 20px;
@@ -125,7 +132,7 @@ section div {
 .type1 div:nth-child(1) {
     background-image: url(../assets/nacho-rochon-423005-unsplash.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 .type1 div:nth-child(2) {
     background-color: white;
@@ -137,7 +144,11 @@ section div {
 .type2 div:nth-child(2) {
     background-image: url(../assets/rodrigo-soares-487443-unsplash.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+}
+
+.quote {
+    outline: 2px solid red;
 }
 
 /* Navbar styling */
@@ -231,14 +242,28 @@ footer {
     width: 70px;
     border-radius: 50%;
     position: relative;
+    box-shadow: 0px 0px 0px 0px var(--pink);
+    transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+footer:hover {
+    box-shadow: 0px 0px 20px 2px var(--pink);
+    background-color: white;
 }
 
 footer div {
     position: absolute;
-    text-align: center;
     font-family: 'Lobster';
     font-size: 24px;
     color: white;
-    left: 20px;
-    top: 10px;
+    left: 50%;
+    top: 50%;
+    margin-top: -17px;
+    margin-left: -12px;
+    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+footer:hover .arrow{
+    color: var(--pink);
 }
