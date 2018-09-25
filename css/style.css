@@ -254,28 +254,22 @@ footer {
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
+    border: 1px solid white;
+}
+
+footer h2 {
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 11%;
 }
 
 footer:hover {
-    box-shadow: 0px 0px 15px 2px var(--pink);
     background-color: white;
-}
+    border: 1px solid var(--pink);
 
-footer div {
-    position: absolute;
-    font-family: 'Lobster';
-    font-size: 28px;
-    color: white;
-    left: 50%;
-    top: 50%;
-    margin-top: -28px;
-    margin-left: -28px;
-    transform: rotate(-90deg);
-    font-weight: bolder;
-    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-
-footer:hover .arrow{
+footer:hover h2 {
     color: var(--pink);
 }
 
