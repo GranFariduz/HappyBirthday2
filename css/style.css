@@ -269,7 +269,7 @@ footer div {
     left: 50%;
     top: 50%;
     margin-top: -19px;
-    margin-left: -17px;
+    margin-left: -11px;
     transform: rotate(-90deg);
     font-weight: bolder;
     transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -295,7 +295,7 @@ footer:hover .arrow{
 
     /* Section styles */
     .type1 {
-        margin: 0px 0px 0px 30px;
+        margin: 0px 0px 0px 10px;
         height: 300px;
         width: 260px;
     }
@@ -304,7 +304,7 @@ footer:hover .arrow{
     }
 
     .type2 {
-        margin: 70px 0px 70px 30px;
+        margin: 70px 0px 70px 10px;
         height: 340px;
         width: 320px;
     }
