@@ -158,6 +158,16 @@ section {
     background-position: center center;
 }
 
+.type1Img1 {
+    background-image: url(../assets/one.jpg);
+    background-size: cover;
+}
+
+.type1Img2 {
+    background-image: url(../assets/four.jpg);
+    background-size: cover;
+}
+
 /* Navbar styling */
 nav {
     height: 230px;
@@ -176,8 +186,10 @@ nav .logo {
     left: 50%;
     margin-left: -50px;
     top: 20px;
-    background-image: url(../assets/Screenshot-2017-11-25\ Instagram\ Post\ –\ Blue\ Sky\ Photography\ Quote.png);
-    background-size: cover;
+    background-image: url(../assets/six.jpg);
+    background-size: 115px 130px;
+    background-repeat: no-repeat;
+    background-position: 43% 20%;
 }
 
 .titleDiv {
