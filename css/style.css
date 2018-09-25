@@ -319,6 +319,15 @@ footer:hover h2 {
         letter-spacing: 6px;
     }
 
+    .type1Img1 {
+        background-image: url(../assets/oneMob.jpg);
+        background-size: cover;
+    }
+    .type1Img2 {
+        background-image: url(../assets/fourMob.jpg);
+        background-size: cover;
+    }
+
     /* Footer styles */
     footer {
         transform: scale(0.8);
