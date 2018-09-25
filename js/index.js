@@ -1,3 +1,5 @@
+new WOW().init();
+
 //Variables
 const loaderDiv = document.querySelector('.loader');
 const loader = document.querySelector('.loader div');
@@ -41,7 +43,7 @@ scrollerDiv.addEventListener('click', () => {
 
     let scrollVal = window.pageYOffset;
     const interval = setInterval(function smooth() {
-        scrollVal -= 17;
+        scrollVal -= 24;
         window.scroll(0, scrollVal);
 
         if(scrollVal <= 0) {

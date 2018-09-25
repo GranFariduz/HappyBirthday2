@@ -26,7 +26,7 @@ body { color: var(--pink); }
 .section-content-heading {
     font-family: 'Lobster';
     font-size: 30px;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
 }
 
 .section-content {
@@ -43,11 +43,11 @@ body { color: var(--pink); }
 }
 
 .shadow {
-    box-shadow: 0px 0px 10px 0px grey;
+    box-shadow: 0px 0px 5px 0px grey;
 }
 
 .radius {
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .section-margin {
@@ -118,37 +118,44 @@ body { color: var(--pink); }
 }
 
 section {
-    display: flex;
-    height: 500px;
-    width: 100%;
-    flex-wrap: wrap;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
 }
 
-section div {
-    flex-grow: 1;
-    min-width: 400px;
+.type1 {
+    padding: 30px;
+    margin: 0px 100px 100px 200px;
 }
 
-.type1 div:nth-child(1) {
-    background-image: url(../assets/nacho-rochon-423005-unsplash.jpg);
+.type1 .section-content-heading {
+    margin-top: 30px;
+}
+
+.type1 .section-content {
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    width: 300px;
+}
+
+.type2 {
+    margin-bottom: -20px;
+}
+
+.one {
+    background-image: url(https://i.pinimg.com/originals/e6/20/2e/e6202eb1e5adeb85b6d99b859c43d4ad.jpg);
     background-size: cover;
-    background-position: center;
-}
-.type1 div:nth-child(2) {
-    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.type2 div:nth-child(1) {
-    background-color: white;
-}
-.type2 div:nth-child(2) {
-    background-image: url(../assets/rodrigo-soares-487443-unsplash.jpg);
+.two {
+    background-image: url(https://quotespics.net/wp-content/uploads/2016/08/Best-Birthday-Wishes-Quotes-friend-newquoteslife.blogspot.com_.jpg);
     background-size: cover;
-    background-position: center;
-}
-
-.quote {
-    outline: 2px solid red;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* Navbar styling */
@@ -240,7 +247,7 @@ footer {
     background-color: var(--pink);
     height: 70px;
     width: 70px;
-    border-radius: 50%;
+    border-radius: 5px;
     position: relative;
     box-shadow: 0px 0px 0px 0px var(--pink);
     transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -250,22 +257,65 @@ footer {
 }
 
 footer:hover {
-    box-shadow: 0px 0px 20px 2px var(--pink);
+    box-shadow: 0px 0px 15px 2px var(--pink);
     background-color: white;
 }
 
 footer div {
     position: absolute;
     font-family: 'Lobster';
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     left: 50%;
     top: 50%;
-    margin-top: -17px;
-    margin-left: -12px;
+    margin-top: -19px;
+    margin-left: -17px;
+    transform: rotate(-90deg);
+    font-weight: bolder;
     transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 footer:hover .arrow{
     color: var(--pink);
+}
+
+/* Responsive CSS */
+/* ------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    /* Section heading styles */
+    .section-heading h1 {
+        font-size: 30px;
+    }
+    .section-heading div {
+        width: 70px;
+        height: 6px;
+    }
+
+    /* Section styles */
+    .type1 {
+        margin: 0px 0px 0px 30px;
+        height: 300px;
+        width: 300px;
+    }
+    .type1 .section-content-heading {
+        margin-top: 10px;
+    }
+
+    .type2 {
+        margin: 70px 0px 70px 30px;
+        height: 340px;
+        width: 360px;
+    }
+
+    .section-content-heading {
+        letter-spacing: 6px;
+    }
+
+    /* Footer styles */
+    footer {
+        transform: scale(0.8);
+    }
+
 }
